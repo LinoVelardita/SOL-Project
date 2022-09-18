@@ -1,0 +1,5 @@
+socket_name=./mysock
+threads_number=1
+max_storage_size=128000000
+max_file_number=1000
+logger_path=./tests/log1.txt
