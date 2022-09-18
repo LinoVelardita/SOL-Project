@@ -1,15 +1,6 @@
 # SOL-Project
-Project for the course of Operating Systems
-file storage server in cui la memorizzazione dei file avviene in memoria
-principale. La capacità dello storage è fissata all’avvio e non varia dinamicamente durante l’esecuzione del server.
-Per poter leggere, scrivere o eliminare file all’interno del file storage, il client deve connettersi al server ed utilizzare
-una API che dovrà essere sviluppata dallo studente (come descritto nel seguito). Il server esegue tutte le operazioni
-richieste dai client operando sempre e solo in memoria principale e mai sul disco.
-La capacità del file storage, unitamente ad altri parametri di configurazione, è definita al momento dell’avvio del
-server tramite un file di configurazione testuale.
-Il file storage server è implementato come un singolo processo multi-threaded in grado di accettare connessioni
-da multipli client. Il processo server dovrà essere in grado di gestire adeguatamente alcune decine di connessioni
-contemporanee da parte di più client.
-Ogni client mantiene una sola connessione verso il server sulla quale invia una o più richieste relative ai file
-memorizzati nel server, ed ottiene le risposte in accordo al protocollo di comunicazione “richiesta-risposta”. Un file è
-identificato univocamente dal suo path assoluto.
+Project for the course of Operating Systems.
+
+File storage server where files are stored in main memory. The storage capacity is fixed at startup and does not dynamically change while the server is running. In order to read, write or delete files within the file storage, the client must connect to the server and use an API to be developed by the student. The server performs all operations requests from clients operating always and only in main memory and never on disk. The file storage capacity, together with other configuration parameters, is defined at the start of the server via a text configuration file. The file storage server is implemented as a single multi-threaded process that can accept connections from multiple clients. The server process must be able to adequately handle a few dozen connections simultaneous by multiple clients. Each client maintains a single connection to the server on which it sends one or more requests for files stored in the server, and obtains the responses according to the "request-response" communication protocol. One file is uniquely identified by its absolute path.
+
+For more information read progettosol-20_21.pdf and Relazione.pdf
